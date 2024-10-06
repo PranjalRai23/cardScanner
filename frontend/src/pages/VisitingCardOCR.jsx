@@ -74,8 +74,7 @@ const VisitingCardOCR = () => {
     setError(null);
 
     try {
-      // Simulate OCR process
-      //await new Promise((resolve) => setTimeout(resolve, 2000));
+      
       const formData = new FormData();
       formData.append('card', file);
       const result = await axios.post("/api/v1/upload", formData);
