@@ -100,8 +100,8 @@ const VisitingCardOCR = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto mt-10 p-6 bg-white rounded-lg shadow-xl">
-      <h1 className="text-2xl font-bold mb-6">Visiting Card OCR</h1>
+    <div className="max-w-md mx-auto mt-10 p-6 bg-white rounded-lg shadow-xl bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0">
+      <h1 className="text-2xl font-bold mb-6">Visiting Card Upload</h1>
 
       <form onSubmit={handleSubmit} className="space-y-4">
         <div

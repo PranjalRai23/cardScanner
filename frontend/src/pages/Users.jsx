@@ -45,8 +45,8 @@ const Users = () => {
   };
 
   return (
-    <div className="flex flex-col h-screen">
-      <div className="flex justify-end mb-4">
+    <div className="flex flex-col h-screen bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0">
+      <div className="flex justify-end mb-4 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0">
         <Select onValueChange={handleItemsPerPageChange} defaultValue={itemsPerPage.toString()}>
           <SelectTrigger className="w-[180px]">
             <SelectValue placeholder="Records per page" />
