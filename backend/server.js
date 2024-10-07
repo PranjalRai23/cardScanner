@@ -1,6 +1,7 @@
 import path from 'path';
 import express from "express";
 import dotenv from "dotenv";
+import cors from "cors";
 
 import { connectDB } from "./db/db.js";
 
@@ -11,6 +12,8 @@ const __dirname = path.resolve();
 dotenv.config();
 
 const app = express();
+
+app.use(cors());
 
 const PORT = process.env.PORT || 5000;
 
